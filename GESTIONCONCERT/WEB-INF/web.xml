@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1"
+  metadata-complete="true">
+  
+  <servlet>
+     <servlet-name>payer</servlet-name>
+     <servlet-class>servlet.servletPayer</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>payer</servlet-name>
+    <url-pattern>/WEB/pages/payer</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+     <servlet-name>reserver</servlet-name>
+     <servlet-class>servlet.servletReserver</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>reserver</servlet-name>
+    <url-pattern>/WEB/pages/reserver</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>event</servlet-name>
+     <servlet-class>servlet.servletEvent</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>event</servlet-name>
+    <url-pattern>/WEB/pages/event</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>achat</servlet-name>
+     <servlet-class>servlet.servletPayement</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>achat</servlet-name>
+    <url-pattern>/WEB/pages/Achat</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+     <servlet-name>reservation</servlet-name>
+     <servlet-class>servlet.servletReservation</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>reservation</servlet-name>
+    <url-pattern>/WEB/pages/Reserver</url-pattern>
+  </servlet-mapping>
+</web-app>
